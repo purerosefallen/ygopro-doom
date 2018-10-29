@@ -31,6 +31,7 @@ function Auxiliary.PreloadUds()
 			local e1=Effect.GlobalEffect()
 			e1:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)
 			e1:SetCode(EVENT_PHASE_START+PHASE_DRAW)
+			e1:SetCountLimit(1)
 			e1:SetCondition(function(e,tp,eg,ep,ev,re,r,rp)
 				return Duel.GetTurnPlayer()==0
 			end)
