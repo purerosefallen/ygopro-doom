@@ -36,7 +36,7 @@ function Auxiliary.PreloadUds()
 				return Duel.GetTurnPlayer()==0
 			end)
 			e1:SetOperation(function(e,tp,eg,ep,ev,re,r,rp)
-				if Duel.GetFieldGroupCount(0,LOCATION_DECK,0)<Duel.GetDrawCount(0) then
+				if Duel.GetFieldGroupCount(0,LOCATION_DECK,0)<=6 then
 					local g=Duel.GetFieldGroup(0,LOCATION_GRAVE+LOCATION_REMOVED,0)
 					Duel.SendtoDeck(g,nil,2,REASON_RULE)
 					Duel.ShuffleDeck(0)
