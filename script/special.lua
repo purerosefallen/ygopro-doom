@@ -81,7 +81,7 @@ function Auxiliary.PreloadUds()
 				e1:SetValue(Auxiliary.DoomValue(atk))
 				tc:RegisterEffect(e1,true)
 			end)
-			Duel.RegisterEffect(e1,0)
+			Duel.RegisterEffect(e3,0)
 			local reg=Card.RegisterEffect
 			Card.RegisterEffect=function(c,e,b)
 				if e:IsHasType(0x7f0) then
@@ -100,7 +100,7 @@ function Auxiliary.PreloadUds()
 				reg(c,e,b)
 			end
 			local lp=Duel.GetLP(0)
-			Duel.SetLP(0,lp+Auxiliary.DoomValue(lp))
+			--Duel.SetLP(0,lp+Auxiliary.DoomValue(lp))
 		end
 		e:Reset()
 	end)
