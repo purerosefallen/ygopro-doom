@@ -1,0 +1,54 @@
+{
+    "windbots": [
+      {
+        "name": "末日·千奈",
+        "deck": "Zoodiac",
+        "dialog": "sennai.zh-CN"
+      },
+      {
+        "name": "末日·千奈",
+        "deck": "Blue-Eyes",
+        "dialog": "sennai.zh-CN"
+      },
+      {
+        "name": "末日·尼亚",
+        "deck": "Trickstar",
+        "dialog": "near.zh-CN"
+      },
+      {
+        "name": "末日·尼亚",
+        "deck": "Altergeist",
+        "dialog": "near.zh-CN"
+      },
+      {
+        "name": "末日·早苗",
+        "deck": "SkyStriker",
+        "dialog": "sanae.zh-CN"
+      },
+      {
+        "name": "末日·早苗",
+        "deck": "DarkMagician",
+        "dialog": "sanae.zh-CN"
+      },
+      {
+        "name": "末日·彩音",
+        "deck": "LightswornShaddoldinosour",
+        "dialog": "ayane.zh-CN"
+      },
+      {
+        "name": "末日·彩音",
+        "deck": "Phantasm",
+        "dialog": "ayane.zh-CN"
+      },
+      {
+        "name": "末日·弥音",
+        "deck": "GrenMajuThunderBoarder",
+        "dialog": "meon.zh-CN"
+      },
+      {
+        "name": "末日·弥音",
+        "deck": "ChainBurn",
+        "dialog": "meon.zh-CN"
+      }
+    ]
+}
