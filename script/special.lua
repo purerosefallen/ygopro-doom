@@ -60,7 +60,7 @@ function Auxiliary.PreloadUds()
 				e1:SetValue(1)
 				Duel.RegisterEffect(e1,0)
 			end
-			local e3=Effect.CreateEffect(c)
+			local e3=Effect.GlobalEffect()
 			e3:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)
 			e3:SetCode(EVENT_PRE_DAMAGE_CALCULATE)
 			e3:SetProperty(EFFECT_FLAG_IGNORE_IMMUNE)
