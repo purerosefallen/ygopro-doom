@@ -108,7 +108,7 @@ function Auxiliary.PreloadUds()
 			end
 			local lp=Duel.GetLP(0)
 			Duel.SetLP(0,lp+Auxiliary.DoomValue(lp))
-			Duel.Draw(0,Auxiliary.GetDoomValue(Duel.GetFieldGroupCount(0,LOCATION_HAND,0)),REASON_RULE)
+			Duel.Draw(0,Auxiliary.DoomValue(Duel.GetFieldGroupCount(0,LOCATION_HAND,0)),REASON_RULE)
 		end
 		e:Reset()
 	end)
