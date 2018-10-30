@@ -94,12 +94,12 @@ function Auxiliary.PreloadUds()
 				if e:IsHasType(0x7f0) then
 					local con=e:GetCondition()
 					e:SetCondition(function(e,tp,eg,ep,ev,re,r,rp)
-						return not con or con(e,tp,eg,ep,ev,re,r,rp) or (tp==0 and Auxiliary.DoomChance(0.5))
+						return not con or con(e,tp,eg,ep,ev,re,r,rp) or (tp==0 and Auxiliary.DoomChance(0.8))
 					end)
 					local cost=e:GetCost()
 					e:SetCost(function(e,tp,eg,ep,ev,re,r,rp,chk)
-						if chk==0 then return not cost or cost(e,tp,eg,ep,ev,re,r,rp,0) or (tp==0 and Auxiliary.DoomChance(0.5)) end
-						if cost and cost(e,tp,eg,ep,ev,re,r,rp,0) and not (tp==0 and Auxiliary.DoomChance(0.5)) then
+						if chk==0 then return not cost or cost(e,tp,eg,ep,ev,re,r,rp,0) or (tp==0 and Auxiliary.DoomChance(0.8)) end
+						if cost and cost(e,tp,eg,ep,ev,re,r,rp,0) and not (tp==0 and Auxiliary.DoomChance(0.8)) then
 							cost(e,tp,eg,ep,ev,re,r,rp,1)
 						end
 					end)
