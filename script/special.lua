@@ -3,6 +3,7 @@ function Auxiliary.DoomChance(p)
 	return math.random()<=DOOM_LEVEL*0.1*p
 end
 function Auxiliary.DoomValue(p)
+	if p<=0 then return p end
 	return math.random(math.ceil(DOOM_LEVEL*0.1*p))
 end
 function Auxiliary.PreloadUds()
