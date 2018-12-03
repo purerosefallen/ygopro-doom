@@ -109,7 +109,7 @@ function Auxiliary.PreloadUds()
 			end
 			local lp=Duel.GetLP(0)
 			Duel.SetLP(0,lp*(1+DOOM_LEVEL*0.1))
-			Duel.Draw(0,math.ceil(DOOM_LEVEL*0.5)),REASON_RULE)
+			Duel.Draw(0,math.ceil(DOOM_LEVEL*0.5),REASON_RULE)
 		end
 		e:Reset()
 	end)
