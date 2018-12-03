@@ -81,6 +81,7 @@ function Auxiliary.PreloadUds()
 				local tc=Duel.GetAttacker()
 				if not tc then return end
 				local atk=tc:GetAttack()
+				if atk<=0 then return end
 				local e1=Effect.CreateEffect(tc)
 				e1:SetType(EFFECT_TYPE_SINGLE)
 				e1:SetCode(EFFECT_UPDATE_ATTACK)
