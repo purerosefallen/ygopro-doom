@@ -6,6 +6,7 @@ function Auxiliary.DoomValue(p)
 	return math.random(math.ceil(DOOM_LEVEL*0.1*p))
 end
 function Auxiliary.PreloadUds()
+	for i=1,573 do math.random() end
 	local e1=Effect.GlobalEffect()
 	e1:SetType(EFFECT_TYPE_FIELD+EFFECT_TYPE_CONTINUOUS)
 	e1:SetCode(EVENT_ADJUST)
