@@ -1,0 +1,25 @@
+{
+  "name": "ygopro-doom",
+  "version": "1.0.0",
+  "description": "Doom Bots of Doom game mode",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/purerosefallen/ygopro-doom.git"
+  },
+  "keywords": [
+    "windbot",
+    "ygopro",
+    "srvpro",
+    "doom"
+  ],
+  "author": "Nanahira",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/purerosefallen/ygopro-doom/issues"
+  },
+  "homepage": "https://github.com/purerosefallen/ygopro-doom#readme"
+}
