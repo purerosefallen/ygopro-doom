@@ -24,8 +24,8 @@ ygopro.stoc_follow_before('SELECT_HAND', true, (buffer, info, client, server, da
 });
 
 ygopro.ctos_follow_before("JOIN_GAME", false, (buffer, info, client, server, datas) => {
-	var struct = ygopro.structs["deck"];
-	struct._setBuff(CTOS_JoinGame);
+	var struct = ygopro.structs["CTOS_JoinGame"];
+	struct._setBuff(buffer);
 	struct.set("pass", "AI");
 	buffer = struct.buffer;
 	return false;
