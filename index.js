@@ -11,7 +11,7 @@ ygopro.stoc_follow_before('HAND_RESULT', true, (buffer, info, client, server, da
 	return true;
 });
 
-ygopro.stoc_follow_before('SELECT_HAND', true, (buffer, info, client, server, datas) => {
+ygopro.stoc_follow_after('SELECT_HAND', true, (buffer, info, client, server, datas) => {
 	var room = ROOM_all[client.rid];
 	if (!room) {
 		return false;
