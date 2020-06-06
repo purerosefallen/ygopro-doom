@@ -1,17 +1,17 @@
 
-ygopro.ctos_follow_before('HS_TOOBSERVER', true, (buffer, info, client, server, datas) => {
+ygopro.ctos_follow_before('HS_TOOBSERVER', true, async (buffer, info, client, server, datas) => {
 	return true;
 });
 
-ygopro.ctos_follow_before('HS_KICK', true, (buffer, info, client, server, datas) => {
+ygopro.ctos_follow_before('HS_KICK', true, async (buffer, info, client, server, datas) => {
 	return true;
 });
 
-ygopro.stoc_follow_before('HAND_RESULT', true, (buffer, info, client, server, datas) => {
+ygopro.stoc_follow_before('HAND_RESULT', true, async (buffer, info, client, server, datas) => {
 	return true;
 });
 
-ygopro.stoc_follow_after('SELECT_HAND', true, (buffer, info, client, server, datas) => {
+ygopro.stoc_follow_after('SELECT_HAND', true, async (buffer, info, client, server, datas) => {
 	var room = ROOM_all[client.rid];
 	if (!room) {
 		return false;
@@ -23,7 +23,7 @@ ygopro.stoc_follow_after('SELECT_HAND', true, (buffer, info, client, server, dat
 	return true;
 });
 
-ygopro.ctos_follow_before("JOIN_GAME", false, (buffer, info, client, server, datas) => {
+ygopro.ctos_follow_before("JOIN_GAME", false, async (buffer, info, client, server, datas) => {
 	if (client.is_local) {
 		return false;
 	}
