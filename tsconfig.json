@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "esnext",
+		"esModuleInterop": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"sourceMap": true
+	},
+	"compileOnSave": true,
+	"allowJs": true,
+	"include": [
+		"*.ts",
+		"src/*.ts"
+	]
+}
