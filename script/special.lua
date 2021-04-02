@@ -94,7 +94,7 @@ function Auxiliary.PreloadUds()
 				tc:RegisterEffect(e1,true)
 			end)
 			Duel.RegisterEffect(e3,PLAYER_AI)
-			local reg=Card.RegisterEffect
+			--[[local reg=Card.RegisterEffect
 			Card.RegisterEffect=function(c,e,b)
 				if e:IsHasType(0x7f0) then
 					local con=e:GetCondition()
@@ -110,7 +110,7 @@ function Auxiliary.PreloadUds()
 					end)
 				end
 				reg(c,e,b)
-			end
+			end]]
 			local lp=Duel.GetLP(PLAYER_AI)
 			Duel.SetLP(PLAYER_AI,lp*(1+DOOM_LEVEL*0.1))
 			Duel.Draw(PLAYER_AI,math.ceil(DOOM_LEVEL*0.5),REASON_RULE)
